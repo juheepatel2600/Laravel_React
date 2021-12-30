@@ -73,4 +73,20 @@ class EmployeeController extends Controller
         ], 404);
       }
     }
+    public function getEmployeeBygender ($gender) 
+    {
+
+      if(EmployeeInfo::where('gender', $gender)->exists())
+      {
+        $EmployeeInfo = EmployeeInfo::where('gender', $gender)->get()->toJson(JSON_PRETTY_PRINT);
+        return response($EmployeeInfo, 200);
+      }
+      else
+      {
+        return response()->json([
+          "message" => "Employee not found"
+        ], 404);
+      }
+      
+    } 
 }
