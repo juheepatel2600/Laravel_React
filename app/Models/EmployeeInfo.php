@@ -11,4 +11,4 @@ class EmployeeInfo extends Model
     protected $table = "employee_infos";
     protected $primarykey = "id";
 }
-}
+
