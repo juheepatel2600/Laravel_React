@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\resources",
-    "\\resources\\lang\\en"
+    "\\app",
+    "\\app\\Http\\Controllers",
+    "\\app\\Models",
+    "\\database",
+    "\\database\\migrations",
+    "\\resources"
   ],
-  "SelectedNode": "\\.styleci.yml",
+  "SelectedNode": "\\database\\migrations\\2021_12_30_003128_create_employee_infos_table.php",
   "PreviewInSolutionExplorer": false
 }

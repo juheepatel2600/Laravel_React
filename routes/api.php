@@ -20,7 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('employees',[EmployeeController::class, 'getAllEmployees']);
-Route::get('employees/{id}', 'ApiController@getEmployee');
-Route::post('employees', 'ApiController@createEmployee');
-Route::put('employees/{id}', 'ApiController@updateEmployee');
-Route::delete('employees/{id}','ApiController@deleteEmployee');
+Route::get('employees/{id}',[EmployeeController::class, 'getEmployee']);
+Route::post('employees',[EmployeeController::class, 'createEmployee']);
+Route::put('employees/{id}',[EmployeeController::class, 'updateEmployee']);
+Route::delete('employees/{id}',[EmployeeController::class, 'deleteEmployee']);
+
