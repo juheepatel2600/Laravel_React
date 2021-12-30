@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\resources",
+    "\\resources\\lang\\en"
   ],
   "SelectedNode": "\\.styleci.yml",
   "PreviewInSolutionExplorer": false
