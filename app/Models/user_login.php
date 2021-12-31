@@ -13,4 +13,11 @@ class user_login extends Model
         'first_name', 'last_name', 'email', 'password'
     ];
 
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
+     protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+
 }
